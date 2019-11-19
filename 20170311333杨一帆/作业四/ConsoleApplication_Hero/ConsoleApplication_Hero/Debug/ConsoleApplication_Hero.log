@@ -1,0 +1,3 @@
+﻿  Hero.cpp
+f:\c++上机作业\作业四\consoleapplication_hero\consoleapplication_hero\hero.cpp(60): warning C4715: “Hero::use_skill1”: 不是所有的控件路径都返回值
+  ConsoleApplication_Hero.vcxproj -> F:\C++上机作业\作业四\ConsoleApplication_Hero\Debug\ConsoleApplication_Hero.exe

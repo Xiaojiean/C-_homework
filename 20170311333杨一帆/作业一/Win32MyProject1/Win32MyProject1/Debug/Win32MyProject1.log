@@ -1,0 +1,5 @@
+﻿  源.cpp
+f:\c++上机作业\作业一\win32myproject1\win32myproject1\源.cpp(12): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\conio.h(453): note: 参见“getch”的声明
+f:\c++上机作业\作业一\win32myproject1\win32myproject1\源.cpp(6): warning C4101: “age”: 未引用的局部变量
+  Win32MyProject1.vcxproj -> F:\C++上机作业\作业一\Win32MyProject1\Debug\Win32MyProject1.exe

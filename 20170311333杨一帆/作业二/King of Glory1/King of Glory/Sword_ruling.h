@@ -1,0 +1,1 @@
+int Sword_ruling(int &a);
