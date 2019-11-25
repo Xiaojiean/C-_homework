@@ -1,0 +1,3 @@
+﻿  character.cpp
+C:\Users\yindc\source\repos\Work3\Work3\character.cpp(8,16): warning C4804: “~”: 在操作中使用类型“bool”不安全
+  Work3.vcxproj -> C:\Users\yindc\source\repos\Work3\Debug\Work3.exe

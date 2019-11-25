@@ -1,0 +1,4 @@
+﻿  character.cpp
+C:\Users\yindc\source\repos\Work2\Work2\character.cpp(6,16): warning C4804: “~”: 在操作中使用类型“bool”不安全
+C:\Users\yindc\source\repos\Work2\Work2\character.cpp(48): warning C4715: “skill”: 不是所有的控件路径都返回值
+  Work2.vcxproj -> C:\Users\yindc\source\repos\Work2\Debug\Work2.exe
