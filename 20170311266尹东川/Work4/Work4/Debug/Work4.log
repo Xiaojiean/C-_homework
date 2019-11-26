@@ -1,4 +1,0 @@
-﻿  skill.cpp
-C:\Users\yindc\source\repos\Work4\Work4\skill.cpp(37,11): warning C4804: “~”: 在操作中使用类型“bool”不安全
-C:\Users\yindc\source\repos\Work4\Work4\skill.cpp(51,11): warning C4804: “~”: 在操作中使用类型“bool”不安全
-  Work4.vcxproj -> C:\Users\yindc\source\repos\Work4\Debug\Work4.exe
