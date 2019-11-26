@@ -1,4 +1,0 @@
-﻿  main.cpp
-f:\consoleapplication_hero\consoleapplication_hero\main.cpp(28): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-f:\consoleapplication_hero\consoleapplication_hero\main.cpp(38): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-  ConsoleApplication_Hero.vcxproj -> F:\ConsoleApplication_Hero\Debug\ConsoleApplication_Hero.exe
