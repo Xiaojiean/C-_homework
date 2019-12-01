@@ -1,0 +1,19 @@
+﻿生成启动时间为 2019/11/19 21:14:21。
+     1>项目“D:\工具\QQ\个人数据资料等\1830287895\FileRecv\Projects\4shangji\4shangji\4shangji.vcxproj”在节点 2 上(ClCompile 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt hero.cpp
+         hero.cpp
+     1>d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.cpp(12): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.cpp(13): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.cpp(19): error C2556: “int Hero::use_skill(bool,bool,int,int,float,float,int,bool,Hero &)”: 重载函数与“void Hero::use_skill(bool,bool,int,int,float,float,int,bool,Hero &)”只是在返回类型上不同
+                 d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.h(12) : 参见“Hero::use_skill”的声明
+     1>d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.cpp(19): error C2371: “Hero::use_skill”: 重定义；不同的基类型
+                 d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.h(12) : 参见“Hero::use_skill”的声明
+     1>d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.cpp(25): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.cpp(26): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\工具\qq\个人数据资料等\1830287895\filerecv\projects\4shangji\4shangji\hero.cpp(33): warning C4804: “<=”: 在操作中使用类型“bool”不安全
+     1>已完成生成项目“D:\工具\QQ\个人数据资料等\1830287895\FileRecv\Projects\4shangji\4shangji\4shangji.vcxproj”(ClCompile 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.83
