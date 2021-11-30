@@ -1,0 +1,23 @@
+Copyright ©2021-2099 ZixuanLiu.All rights reserved
+2.1 c++兼容c，有c语言的简洁、高效、可移植等优点；同时c++是面向对象的程序设计，更加安全，能够更好的发现错误并改正。
+2.4 函数定义在后，调用在前，必须将函数原型写在调用之前，本程序缺少函数原型，所以编译不通过。
+2.5 （1）等价 （2）不等价
+2.10  B
+2.11  A
+2.12  C
+2.13  B
+2.15  C
+2.18  101
+2.19  10 10
+2.21 例如                                               改为:
+#include<iostream>
+using namespace std;
+#define A 2+4                                      int const A=2+4;
+#define B A*3                                       int const B=A*3;
+int main 
+{
+  cout<<B<<endl;
+  return 0;
+}
+运行结果为14，但容易搞错认为结果是18，运用const可以消除#define的不安全性；
+
