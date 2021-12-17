@@ -1,0 +1,75 @@
+#include <iostream>
+using namespace std;
+class Coordinate {
+public:
+    Coordinate()
+    {
+        times = 2;
+        cout << "Coordinate construction1 called!" << endl;
+    }
+    Coordinate(int times1)
+    {
+        times = times1;
+        cout << "Coordinate construction2 called!" << endl;
+    }
+    ~Coordinate()
+    {
+        cout << "Coordinate destruction called!" << endl;
+    }
+    void InputCoord()
+    {
+        for (int i = 0; i <times; i++)
+        {
+            cout << "请输入学生姓名:" << endl;
+            cin >> sname[i];
+            cout << "请输入科目A成绩:" << endl;
+            cin >> Coord[i][1];
+            cout << "请输入科目B成绩:" << endl;
+            cin >> Coord[i][2];
+            cout << "请输入科目C成绩:" << endl;
+            cin >> Coord[i][3];
+        }
+    }
+    void ShowCoord()
+    {
+        cout << "The coord is:" << endl;
+        for (int i = 0; i < times; i++)
+        {
+            cout << "(""姓名：" << sname[i] << " " << "科目A成绩：" << Coord[i][1] << "科目B成绩： " << Coord[i][2] << " " << "科目C成绩：" << Coord[i][3] << ")" << endl;
+        }
+    }
+    void ShowAvgCoord()
+    {
+        float avgx = 0;
+        float avgy = 0;
+        float avgz = 0;
+        for (int i = 0; i < times; i++)
+        {
+            avgx = avgx + Coord[i][1];
+            avgy = avgy + Coord[i][2];
+            avgz = avgz + Coord[i][3];
+        }
+        avgx = avgx / times;
+        avgy = avgy / times;
+        avgz = avgz / times;
+        cout << "课目A平均成绩：" << avgx << endl;
+        cout << "课目B平均成绩：" << avgy << endl;
+        cout << "课目C平均成绩：" << avgz << endl;
+        for (i = 0; i < times; i++) {
+            cout << "姓名：" << sname[i]<<" " << "平均成绩：" << (Coord[i][1] + Coord[i][2] + Coord[i][3]) / 3 << endl;
+        }
+    }
+private:
+    int i;
+    string sname[100];
+    float Coord[100][100]; // 存放输入坐标的数组
+    int times; // 存放输入坐标数目
+};
+int main()
+{
+    Coordinate x;
+    x.InputCoord();
+    x.ShowCoord();
+    x.ShowAvgCoord();
+    return 0;
+}
