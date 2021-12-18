@@ -1,0 +1,41 @@
+#include "iostream"
+#include  "string"
+using namespace std;
+
+class TStudent
+{
+public:
+	//TStudent()
+	//{
+	//m_classMoney = 1000;
+	//}
+	void InitStudent(char name[])
+	{	}
+	void ExpendMoney(float money)
+	{
+		m_classMoney -= money;
+	}
+	void ShowMoney()
+	{
+		cout << "班费还剩余：" << m_classMoney << endl;
+	}
+
+
+private:
+	static float m_classMoney;
+};
+float TStudent::m_classMoney = 1000;
+int main()
+{
+	TStudent A, B, C;
+	A.ExpendMoney(50);
+	A.ShowMoney();
+	B.ExpendMoney(98.5);
+	B.ShowMoney();
+	C.ExpendMoney(500.53);
+	C.ShowMoney();
+
+	system("pause");
+	return 0;
+}
+Copyright ©2021-2099 zhouxianfu. All rights reserved
