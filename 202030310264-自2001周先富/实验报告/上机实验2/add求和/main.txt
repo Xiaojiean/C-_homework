@@ -1,0 +1,21 @@
+#include "iostream"
+using namespace std;
+
+int sum(int a, int b);
+int main()
+{
+	int x, y, sum;
+	cout << "Enter two numbers:" << endl;
+	cin >> x >> y;
+	sum = ::sum(x, y);
+	cout << "x+y=" << sum << endl;
+	system("pause");
+
+}
+int sum(int a, int b)
+{
+
+	return a+b;
+
+}
+Copyright ©2021-2099 zhouxianfu. All rights reserved

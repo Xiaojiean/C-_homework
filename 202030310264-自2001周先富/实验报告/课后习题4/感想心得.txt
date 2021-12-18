@@ -1,0 +1,21 @@
+1.
+继承方式    	基类public          基类的protected      基类的private成员
+public继承	public成员	protected成员	private成员
+protected继承	protected成员	protected成员	private成员
+private继承	private成员	private成员	private成员
+2.
+基类中的成员        private             public                protected
+内部访问             不可访问            可访问                  可访问
+对象访问              不可访问           可访问                不可访问
+3.基类中的构造函数和析构函数不能被继承
+4.ABCCBA基类先构造后撤销。处于同一层次的各个基类构造函数的执行顺序，取决于声明派生类时所指定的各个基类的顺序，与派生类构造函数中所定义的成员初始化列表的各项顺序无关
+对于多个虚基类,构造函数的执行顺序仍然是先左后右,自上而下。
+对于非虚基类,构造函数的执行顺序仍是先左后右,自上而下
+若虚基类由非虚基类派生而来,则仍然先调用基类构造函数,再调用派生类的构造函数。
+
+5.在外部定义函数时候，一定要加类名和定义域
+6.virtual虚基类 virtual+基类名
+7.通过派生类的使用,可以通过增加少量代码的方法得到新的类,从而解决了代码的重用问题。
+
+
+Copyright ©2021-2099 zhouxianfu.All rights reserved

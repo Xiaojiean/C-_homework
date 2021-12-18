@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class Complex {
+	double x;
+	double y;
+public:
+	Complex(double r = 0, double i = 0)
+	{
+		x = r; y = i;
+	}
+	void print();
+	friend Complex operator*(Complex co1, Complex co2);
+};
+Complex operator*(Complex co1, Complex co2)
+{
+	Complex temp;
+	temp.x = co1.x*co2.x - co1.y*co2.y;
+	temp.y = co1.x*co2.y + co1.y * co2.x;
+	return temp;
+}
+void Complex::print()
+{
+	cout << "the answer is     " << x << "+ "<<" (  " << y << " i )"<<endl;
+}
+int main()
+{
+	Complex com1(1,-1), com2(1,1), total1;
+	total1 = com1 * com2;
+	total1.print();
+	return 0;
+}
+
+ 
+Copyright ©2021-2099 zhouxianfu. All rights reserved
