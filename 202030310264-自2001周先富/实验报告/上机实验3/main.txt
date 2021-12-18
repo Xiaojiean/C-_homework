@@ -1,0 +1,150 @@
+#include<iostream>
+#include"string"
+using namespace std;
+
+class Score
+{
+public:
+	Score(int stnumber = 2) //构造函数
+	{
+		if (stnumber > 100)
+			number = 100;
+		else number = stnumber;
+	}
+
+	void input();
+
+	void showallstu() //显示所有学生的信息
+	{
+		for (int i = 0; i < number; i++)
+		{
+			cout << "姓名：" << name[i] << " 科目A成绩：" << grade[i][0]
+			<< " 科目B成绩：" << grade[i][1] << " 科目C成绩：" << grade[i][2] << endl;
+		}
+	}
+
+	void showstuavg();
+
+	void showavger();
+
+	void rank();
+
+private:
+	int number;
+	char name[100][100];
+	double grade[100][3];
+};
+
+int main()/************************** main函数在这里！！！！**********************/
+{
+	Score stu;
+	stu.input();
+	stu.showallstu();
+	stu.showstuavg();
+	stu.showavger();
+	stu.rank();
+	getchar();
+	getchar();
+	return 0;
+}
+/************************************************************************************/
+void Score::input()  //输入所有学生的姓名和成绩
+{
+	for (int i = 0; i < number; i++)
+	{
+		//输入姓名
+		cout << "请输入学生姓名:" << endl;
+		cin >> name[i];
+		//输入学生成绩
+		cout << "请输入科目A成绩：" << endl;
+		cin >> grade[i][0];
+		cout << "请输入科目B成绩：" << endl;
+		cin >> grade[i][1];
+		cout << "请输入科目C成绩：" << endl;
+		cin >> grade[i][2];
+	}
+}
+void Score::showstuavg()  //显示所有学生的平均成绩
+{
+	for (int i = 0; i < number; i++)
+	{
+		cout << "姓名:" << name[i] << " 平均成绩："
+			<< (grade[i][0] + grade[i][1] + grade[i][2]) / 3 << endl;
+	}
+}
+void Score::showavger()//显示每门课的平均成绩
+{
+	double sum = 0;
+	for (int i = 0; i <3; i++)
+	{
+		switch (i)
+		{
+		case 0:
+			for (int m = 0; m < number; m++)
+			{
+				sum += grade[m][0];
+			};
+			cout << "课程名称A平均成绩：" << sum / number << endl;
+			sum = 0;
+			break;
+		case 1:
+			for (int m = 0; m < number; m++)
+			{
+				sum += grade[m][1];
+			};
+			cout << "课程名称B平均成绩：" << sum / number << endl;
+			sum = 0;
+			break;
+		case 2:
+			for (int m = 0; m < number; m++)
+			{
+				sum += grade[m][2];
+			};
+			cout << "课程名称C平均成绩：" << sum / number << endl;
+			sum = 0;
+			break;
+		default:break;
+		}
+	}
+}
+void Score::rank() //对每门课成绩进行排序
+{
+	double temp;
+	char tempname[100];
+	string names[100];
+	cout << "下面是成绩排序：" << endl;
+	for (int m = 0; m < 3; m++)
+	{
+		switch (m)
+		{
+		case 0:cout << "课程名：A" << endl;
+			break;
+		case 1:cout << "课程名：B" << endl;
+			break;
+		case 2:cout << "课程名：C" << endl;
+			break;
+		}
+		for (int i = 0; i < number-1 ; i++)
+		{
+			if (grade[i][m] < grade[i + 1][m])
+			{
+				temp = grade[i + 1][m];
+				grade[i + 1][m] = grade[i][m];
+				grade[i][m] = temp;
+
+				names[i+1]=name[i];
+				names[i]=name[i + 1];
+				//tempname[100] = name[i][100];
+				
+
+			}
+
+		}
+		for (int i = 0; i <number; i++)
+		{
+			cout <<"第"<<i+1<< "名    姓名：" << names[i] << " 成绩：" << grade[i][m] << endl;
+		}
+	}
+	cout << "成绩排序完成" << endl;
+}
+Copyright ©2021-2099 zhouxianfu. All rights reserved
