@@ -1,0 +1,115 @@
+#include<iostream>
+#include<string>
+using namespace std;
+/************************* 基类 ******************************/
+class MyArray 
+{
+public:
+	MyArray()
+	{
+		cout << "MyArray类对象已创建!" << endl;
+	}
+	MyArray(int length);
+	~MyArray();
+	void Input();
+	void Display(string);
+protected:
+	int *alist;
+	int length;
+};
+
+MyArray::MyArray(int leng)
+{
+	if (leng <= 0)
+	{
+		cout << "error length";
+		exit(1);
+	}
+	length = leng;
+	alist = new int[length];
+	if (alist == NULL)
+	{
+		cout << "assign failure";
+		exit(1);
+	}
+	cout << "MyArray类对象已创建!" << endl;
+}
+MyArray::~MyArray()
+{
+	delete[] alist;
+	cout << "MyArray类对象已撤销!" << endl;
+}
+void MyArray::Display(string str)
+{
+	int i;
+	int *p = alist;
+	cout << str << length << "个整数: ";
+	for (i = 0; i < length; i++, p++)
+		cout << *p << "";
+	cout << endl;
+}
+void MyArray::Input()
+{
+	cout << "请从键盘输入" << length << "个整数:";
+	int i;
+	int *p = alist;
+	for (i = 0; i < length; i++, p++)
+		cin >> *p;
+}
+/************************* 派生类 ******************************/
+class SortArray:public MyArray
+{
+public:
+	SortArray(int leng)
+	{
+		if (leng <= 0)
+		{
+			cout << "error length";
+			exit(1);
+		}
+		length = leng;
+		alist = new int[length];
+		if (alist == NULL)
+		{
+			cout << "assign failure";
+			exit(1);
+		}
+		cout << "SortArray已创建" << endl;
+	}
+	~SortArray()
+	{
+		cout << "SortArray已销毁" << endl;
+	}
+	void rank()
+	{
+		int *p = alist;
+		int i, j,temp;
+		for (j = 0; j < length - 1; j++)
+		{
+			for (i = 0; i < length - 1 - j; i++)
+				if (p[i] > p[i+1])
+				{
+					temp = p[i];
+					p[i] = p[i + 1];
+					p[i + 1] = temp;
+				}
+		}
+		cout << "从小到大排序如下" << endl;
+		for (int k=0; k < length; k++)
+			cout << p[k] << endl;
+	}
+
+
+};
+
+int main()
+{
+	SortArray a(5);
+	a.Input();
+	a.Display("显示已经输入的");
+	a.rank();
+	return 0;
+}
+
+ 
+Copyright ©2021-2099 zhouxianfu. All rights reserved
