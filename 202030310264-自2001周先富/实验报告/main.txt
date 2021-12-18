@@ -1,0 +1,21 @@
+#include "iostream"
+#include "string"
+using namespace std;
+
+int main()
+{
+	int age;
+	string name;
+	cout << "please input your name and age!" << endl;
+	cin >> name >> age;
+
+	cout<< "hello world!  " <<endl
+		<< "My name is  " << name << endl 
+		<< "and  my age is " << age << endl;
+
+	system("pause");
+
+
+	return 0;
+}
+Copyright ©2021-2099 zhouxianfu. All rights reserved
