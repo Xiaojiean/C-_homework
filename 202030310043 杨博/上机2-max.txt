@@ -1,0 +1,11 @@
+int max(int *p)
+{
+	int j=0,a;
+	a = p[j];
+	for (j = 0; j < 5; j++)
+	{
+		if (p[j] >= a)
+			a = p[j];
+	}
+	return a;
+}

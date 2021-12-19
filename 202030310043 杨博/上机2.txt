@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int max(int *p);
+int min(int *p);
+int main()
+{
+	int a[5];
+	int i,m,n;
+	for (i = 0; i < 5; i++)
+	{
+		cin >> a[i];
+	}
+	for (i = 0; i < 4; i++)
+	{
+		if (a[i]<0||a[i]>100)
+		{
+			cout << "error"<<endl;
+			return 0;
+		}
+		else
+		{
+			m=max(a);
+			n=min(a);
+		}
+	}
+	cout << m <<" "<< n << endl;
+	
+}

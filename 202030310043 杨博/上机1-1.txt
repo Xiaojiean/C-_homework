@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int age;
+	cout << "Please input your AGE:" << endl;
+	cin >> age;
+	cout << "Hello,world!I am " << age << endl;
+	return 0;
+}
