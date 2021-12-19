@@ -1,0 +1,9 @@
+﻿  avg.cpp
+  showcjavg.cpp
+  自己.cpp
+  inputcj.cpp
+  正在生成代码...
+自己.obj : error LNK2019: 无法解析的外部符号 "public: void __thiscall Score::inputcj(int)" (?inputcj@Score@@QAEXH@Z)，该符号在函数 _main 中被引用
+自己.obj : error LNK2019: 无法解析的外部符号 "public: void __thiscall Score::showcjavg(void)" (?showcjavg@Score@@QAEXXZ)，该符号在函数 _main 中被引用
+自己.obj : error LNK2019: 无法解析的外部符号 "public: void __thiscall Score::avg(void)" (?avg@Score@@QAEXXZ)，该符号在函数 _main 中被引用
+D:\桌面\课程\c\第三次上机实验\自己\Debug\自己.exe : fatal error LNK1120: 3 个无法解析的外部命令
