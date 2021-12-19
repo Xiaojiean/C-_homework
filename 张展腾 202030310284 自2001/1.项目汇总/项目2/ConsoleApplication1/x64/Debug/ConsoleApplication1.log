@@ -1,0 +1,9 @@
+﻿生成启动时间为 2021/12/19 11:52:07。
+     1>项目“D:\学习、论文、比赛资料\论文、实验报告、实习报告、入党\1.我的\4.作业\c++\202030310284 张展腾 自2001\实验报告\实验报告2\实验报告2\ConsoleApplication1\ConsoleApplication1.vcxproj”在节点 2 上(Build 个目标)。
+       项目文件包含 ToolsVersion="15.0"。此工具集可能未知或缺失。在这种情况下，通过安装 MSBuild 的正确版本，或许可以解决此问题。否则，该 build 可能已因策略原因而被强制为某个特定 ToolsVersion。将该项目视为其已具有 ToolsVersion="4.0"。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=291333。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets(44,5): error MSB8020: The builds tools for v141 (Platform Toolset = 'v141') cannot be found. To build using the v141 build tools, either click the Project menu or right-click the solution, and then select "Update VC++ Projects...". Install v141 to build using the v141 build tools.
+     1>已完成生成项目“D:\学习、论文、比赛资料\论文、实验报告、实习报告、入党\1.我的\4.作业\c++\202030310284 张展腾 自2001\实验报告\实验报告2\实验报告2\ConsoleApplication1\ConsoleApplication1.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.00
