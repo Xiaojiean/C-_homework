@@ -1,0 +1,3 @@
+﻿  ConsoleApplication1.cpp
+d:\桌面\课程\c\第四次上机实验\consoleapplication1\consoleapplication1\consoleapplication1.cpp(37): warning C4305: “参数”: 从“double”到“float”截断
+  ConsoleApplication1.vcxproj -> D:\桌面\课程\c\第四次上机实验\ConsoleApplication1\Debug\ConsoleApplication1.exe
