@@ -50,10 +50,13 @@ int add(int a, int b)
 }
 ~~~
 
-# 程序结果
+# 程序结果(存在两份图片，防止图片加载错误)
 
 ![][base64str1]
 ![][base64str2]
+
+![](https://raw.githubusercontent.com/Kang-tao/C-_homework/develop/202030310174%20%E6%9D%A8%E5%B8%86/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%9C/1/1.png)
+![](https://raw.githubusercontent.com/Kang-tao/C-_homework/develop/202030310174%20%E6%9D%A8%E5%B8%86/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%9C/1/2.png)
 
 # 第一个实验问题所在
 
