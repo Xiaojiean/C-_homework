@@ -69,11 +69,10 @@ int main(void)
 }
 
 ~~~
-
-# 程序结果(存在两份图片，防止图片加载错误)
+# 程序结果(存在两份图片，若无图片请稍等加载，防止图片加载错误)
 
 ![][base64str3]
-![](https://raw.githubusercontent.com/Kang-tao/C-_homework/develop/202030310174%20%E6%9D%A8%E5%B8%86/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%9C/2/3.png)
+![3.png](https://s2.loli.net/2021/12/20/sR1IXwVjbZ3B7gh.png)
 
 # 实验问题所在
 
