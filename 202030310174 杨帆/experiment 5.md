@@ -50,12 +50,16 @@ public:
 # 程序结果
 
 ![][base64str1]
-
 ![][base64str2]
-
 ![][base64str3]
+![][base64str4]
+![][base64str5]
 
-![][base64str4]![][base64str5]
+![14.png](https://s2.loli.net/2021/12/20/NbXLIYpS2yDVBTn.png)
+![15.png](https://s2.loli.net/2021/12/20/yj7sHeGSM9OqmQX.png)
+![16.png](https://s2.loli.net/2021/12/20/iZlp5UPVfKemoLE.png)
+![17.png](https://s2.loli.net/2021/12/20/qOJA2udwRegMZUT.png)
+![18.png](https://s2.loli.net/2021/12/20/bRYFkNMoqxtB172.png)
 
 # 实验问题所在
 
