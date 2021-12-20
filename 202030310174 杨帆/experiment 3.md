@@ -283,6 +283,12 @@ int main()
 ![][base64str5]
 ![][base64str6]
 
+![4.png](https://s2.loli.net/2021/12/20/L8s9GVP1HTkacZe.png)
+![5.png](https://s2.loli.net/2021/12/20/YG43X7xRUiMEySL.png)
+![6.png](https://s2.loli.net/2021/12/20/tYIrPzL7vloBA5S.png)
+![7.png](https://s2.loli.net/2021/12/20/Avo57VkO6ZFjbNJ.png)
+![8.png](https://s2.loli.net/2021/12/20/DQZejTgfYvFJWqG.png)
+![9.png](https://s2.loli.net/2021/12/20/LFsOyJnIbl8GBHr.png)
 # 第一个实验问题所在
 ## 1. 提示报错
 解决方案：重新输入一遍代码，程序正常运行，可能因为某些异常导致
