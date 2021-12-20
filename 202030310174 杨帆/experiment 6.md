@@ -150,6 +150,8 @@ int main(void)
 
 ![][base64str1]
 
+![19.png](https://s2.loli.net/2021/12/20/HDylFae8n3oXSK9.png)
+
 # 实验问题所在
 
 ## 1. 内存泄漏
