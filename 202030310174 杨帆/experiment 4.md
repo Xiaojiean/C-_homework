@@ -113,6 +113,10 @@ int main()
 ![][base64str3]
 ![][base64str4]
 
+![10.png](https://s2.loli.net/2021/12/20/cNjhsDenUISxW89.png)
+![11.png](https://s2.loli.net/2021/12/20/6VeufGibgPcJ2TX.png)
+![12.png](https://s2.loli.net/2021/12/20/k4rnPsAtNZlpYME.png)
+![13.png](https://s2.loli.net/2021/12/20/2ZBoNWag1Hcf6xA.png)
 # 第一个实验问题所在
 
 ## 1. 无问题，一遍过
