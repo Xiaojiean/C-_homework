@@ -83,6 +83,7 @@ int main(void)
 # 程序结果
 
 ![][base64str1]
+![20.png](https://s2.loli.net/2021/12/20/3GuOdnWi2xkIhBA.png)
 
 # 实验问题所在
 
