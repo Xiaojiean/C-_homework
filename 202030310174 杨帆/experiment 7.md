@@ -80,7 +80,7 @@ int main(void)
 }
 ~~~
 
-# 程序结果
+# 程序结果(存在两份图片，若无图片请稍等加载，防止图片加载错误)
 
 ![][base64str1]
 ![20.png](https://s2.loli.net/2021/12/20/3GuOdnWi2xkIhBA.png)
