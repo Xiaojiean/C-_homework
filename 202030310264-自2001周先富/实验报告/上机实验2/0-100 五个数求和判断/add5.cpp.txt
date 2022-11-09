@@ -1,0 +1,20 @@
+extern int max, min;
+int add( int c[5])
+{
+	int sum=0;
+	max = c[0];
+	min = max;
+	for (int i = 0; i <= 4; i++)
+	{
+		sum += c[i];
+		if (c[i] > max)
+			max = c[i];
+		if (c[i] < min)
+			min = c[i];
+	}
+
+	return sum;
+}
+
+
+Copyright ©2021-2099 zhouxianfu. All rights reserved

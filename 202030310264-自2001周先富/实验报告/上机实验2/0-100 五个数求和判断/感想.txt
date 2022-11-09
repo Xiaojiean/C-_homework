@@ -1,0 +1,5 @@
+在本次实验中，掌握了分文件的使用方法，并且学会使用bool类型的函数，来做判断
+
+
+
+Copyright ©2021-2099 zhouxianfu. All rights reserved

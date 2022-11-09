@@ -1,0 +1,7 @@
+会利用编译器创建C++程序
+在这第一个实验中要想让运行窗口悬停，要加一个system("pause");
+熟练掌握了cin>>输入函数和cout<<函数的使用
+
+
+
+Copyright ©2021-2099 zhouxianfu. All rights reserved

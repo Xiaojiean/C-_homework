@@ -1,0 +1,4 @@
+在本次求和实验中，发现C++和C有相同的方法，学起来其实并不简单
+
+
+Copyright ©2021-2099 zhouxianfu. All rights reserved
