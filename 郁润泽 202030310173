@@ -1,0 +1,90 @@
+Copyright ©2021-2099 runzeyv. All rights reserved
+2.2这道题是将一段c语言程序改写为一段c++程序，本来是很简单的，我用的编程软件是vs2019，上学期学习c语言的时候一直是玩的好好得。
+不知道为什么这次我把题目改成c++程序的时候就抽风了，我当时习惯性的点了Ctrl+F5，但是很奇怪的是显示“无法启动程序.exe”,系统找不到指定文件“。
+一开始以为是我的问题，重新检查了代码和头文件，但是还是没有用。然后我上网搜索，说是少安装了SDK，重新安装以后没有用，最后我把整个程序卸载并删除了相关文件夹，重新下载。
+我用新程序编译之前写的代码，没有问题，然后编译2.2的作业，还是找不到指定文件。最后我用c写了一个”Hello World！“，这次过了，然后我用c++也写了一个”Hello World！“
+结果又过了，然后我打开之前找不到指定文件的程序，神奇的事情发生了，这次能找到了。最后全程没有找到问题发生在哪里。。。。。。
+然后是2.4
+题目程序如下
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	cout << "Enter two numbers：";
+	cin >> a >> b;
+	c + sum(a, b);
+	cout << "sum is:" << endl << c;
+	return 0;
+}
+sum(int a, int b)
+{
+	return a + b;
+}
+此时书上说错误的原因是在调用函数sum前没有进行函数声明，修改方式是在语句“using namespace std;”后面加上一句“sum（int a，int b);”
+但是vs2019还报了一个错误，“错误(活动)	E0260	缺少显式类型(假定“int”)	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	12	”
+当我按照书上的方式修改之后，报错更多了，
+修改后程序如下
+#include<iostream>
+using namespace std;
+sum(int a, int b);
+int main()
+{
+	int a, b, c;
+	cout << "Enter two numbers：";
+	cin >> a >> b;
+	c + sum(a, b);
+	cout << "sum is:" << endl << c;
+	return 0;
+}
+sum(int a, int b)
+{
+	return a + b;
+}
+
+严重性	代码	说明	项目	文件	行	禁止显示状态
+警告	C4552	”+“: 未使用表达式结果	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	9	
+错误	C4700	使用了未初始化的局部变量“c”	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	10	
+警告	C6001	使用未初始化的内存“c”。	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	9	
+错误(活动)	E0260	缺少显式类型(假定“int”)	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	3	
+错误(活动)	E0260	缺少显式类型(假定“int”)	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	13	
+
+这个时候就很懵，然后重新看了一遍ppt，看见了这个程序
+# include <sidio.h>
+int add(int a, int b);
+int main()
+{……}
+int add(int a, int b)
+{ int c;
+  c = a+b;
+  return c;}
+  
+  然后我就对程序做了修改如下（简单说就是重新加了两个int）
+  #include<iostream>
+using namespace std;
+int sum(int a, int b);//这里一个
+int main()
+{
+	int a, b, c;
+	cout << "Enter two numbers：";
+	cin >> a >> b;
+	c + sum(a, b);
+	cout << "sum is:" << endl << c;
+	return 0;
+}
+int sum(int a, int b)//这里一个
+{
+	return a + b;
+}
+
+严重性	代码	说明	项目	文件	行	禁止显示状态
+警告	C4552	”+“: 未使用表达式结果	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	9	
+错误	C4700	使用了未初始化的局部变量“c”	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	10	
+警告	C6001	使用未初始化的内存“c”。	2.4	C:\Users\郁润泽\source\repos\2.4\源.cpp	9	
+
+新的报错是上面这几个
+
+最后发现是“	c + sum(a, b);”应该改为“	c = sum(a, b);”
+
+不够有一说一是，报告是中秋节写的，作业是前一天做的，前一天的时候，不知道为啥，还有一个“sum(int a, int b);”加上int之后，
+会报错已经有一个main函数的错误，我也不知道是怎么解决的，第二天早晨突然就好了。
