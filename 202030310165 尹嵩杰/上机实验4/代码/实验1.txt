@@ -1,0 +1,84 @@
+【1】
+# include<iostream>
+using namespace std;
+class Tr{
+    public :  
+        Tr(int n) 
+        { i = n;}
+        void set_i(int n)
+        { i = n;}
+        int get_i()
+        {return i;} 
+    private:   
+        int i;     
+}; 
+void sqr_it(Tr ob) // 对象ob作为函数sqr_it的形参
+{ ob.set_i(ob.get_i()*ob.get_i());
+  cout<<"在函数sqr_it内，形参对象ob的数据成员i的值为:"<<ob.get_i();
+  cout<<endl;
+}
+int main()
+{ Tr obj(10);
+   cout<<"调用函数sqr_it前, 实参对象obj的数据成员i的值为:";
+   cout<<obj.get_i()<<endl;
+   sqr_it(obj);
+   cout<<"调用函数sqr_it后, 实参对象obj的数据成员i的值为:";
+   cout<<obj.get_i()<<endl;
+  return 0;
+}
+【2】
+# include<iostream>
+using namespace std;
+class Tr{
+    public :  
+        Tr(int n) 
+        { i = n;}
+        void set_i(int n)
+        { i = n;}
+        int get_i()
+        {return i;} 
+    private:   
+        int i;     
+}; 
+void sqr_it(Tr* ob) // 对象指针ob作为函数sqr_it的形参
+{ ob->set_i(ob->get_i()*ob->get_i());
+  cout<<“在函数sqr_it内，形参对象ob的数据成员i的值为:”<<ob.get_i();
+  cout<<endl;
+}
+int main()
+{ Tr obj(10);
+   cout<<"调用函数sqr_it前, 实参对象obj的数据成员i的值为:";
+   cout<<obj.get_i()<<endl;
+   sqr_it(obj);
+   cout<<"调用函数sqr_it后, 实参对象obj的数据成员i的值为:";
+   cout<<obj.get_i()<<endl;
+  return 0;
+}
+【3】
+# include<iostream>
+using namespace std;
+class Tr{
+    public :  
+        Tr(int n) 
+        { i = n;}
+        void set_i(int n)
+        { i = n;}
+        int get_i()
+        {return i;} 
+    private:   
+        int i;     
+}; 
+void sqr_it(Tr& ob)
+{ ob.set_i(ob.get_i()*ob.get_i());
+  cout<<“在函数sqr_it内，形参对象ob的数据成员i的值为:”<<ob.get_i();
+  cout<<endl;
+}
+int main()
+{ Tr obj(10);
+   cout<<"调用函数sqr_it前, 实参对象obj的数据成员i的值为:";
+   cout<<obj.get_i()<<endl;
+   sqr_it(obj);
+   cout<<"调用函数sqr_it后, 实参对象obj的数据成员i的值为:";
+   cout<<obj.get_i()<<endl;
+  return 0;
+}
